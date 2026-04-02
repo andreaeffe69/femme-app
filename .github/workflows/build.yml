@@ -12,14 +12,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build APK with Docker
-        uses: digreatbrian/buildozer-action@v2
-        with:
-          python-version: 3.11
-          buildozer-cmd: buildozer android debug
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y git zip unzip openjdk-17-jdk autoconf libtool
+          pip install buildozer cython
+
+      - name: Accept Android licenses
+        run: |
+          yes | ~/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager --licenses || true
+          yes | ~/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin/sdkmanager "build-tools;37.0.0" || true
+
+      - name: Build with Buildozer
+        run: |
+          buildozer android debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: femme-apk
-          path: ./bin/*.apk
+          path: bin/*.apk
