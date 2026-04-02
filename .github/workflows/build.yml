@@ -18,8 +18,15 @@ jobs:
           sudo apt install -y git zip unzip openjdk-17-jdk autoconf libtool
           pip install buildozer cython
 
-      - name: Accept Android licenses
+      - name: Setup Android SDK
         run: |
+          mkdir -p /home/runner/.buildozer/android/platform
+          cd /home/runner/.buildozer/android/platform
+          wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+          unzip commandlinetools-linux-11076708_latest.zip
+          mkdir -p cmdline-tools
+          mv cmdline-tools cmdline-tools/latest
+          export PATH=$PATH:/home/runner/.buildozer/android/platform/android-sdk/cmdline-tools/latest/bin
           yes | sdkmanager --licenses || true
           yes | sdkmanager "build-tools;37.0.0" || true
 
