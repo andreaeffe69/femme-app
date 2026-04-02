@@ -1,0 +1,31 @@
+name: Build Signed APK
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y git zip unzip openjdk-17-jdk autoconf libtool
+          pip install buildozer cython
+
+      - name: Build with Buildozer
+        uses: digreatbrian/buildozer-action@v2
+        with:
+          python-version: 3.11
+          buildozer-cmd: buildozer -v android debug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: femme-apk
+          path: ./bin/*.apk
