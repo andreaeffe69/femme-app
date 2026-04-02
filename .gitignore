@@ -1,0 +1,5 @@
+interfaccia/buildozer_env/
+interfaccia/.buildozer/
+*.pyc
+__pycache__/
+*.log

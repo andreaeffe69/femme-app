@@ -1,0 +1,160 @@
+============================================================
+🔮 PROFILO ASTROLOGICO COMPLETO
+============================================================
+📅 Data di nascita (ora locale): 21 Luglio 1969 - 18:34 (CEST, DST)
+🌍 Universal Time (UT/GMT): 21 Luglio 1969 - 16:34
+⏱️ Local Sidereal Time (LST): 13:25:24
+🏠 Domificazione: Placidus
+📍 Lat, Long: 42°51'N, 13°35'E
+🏙️ Città/luogo: ascoli p
+
+⭐ PUNTI ANGOLARI:
+   Ascendente: 27.8° ♐ Sagittario
+   Medio Cielo: 23.1° ♎ Bilancia
+
+🪐 PIANETI NEI SEGNI:
+   Sole: 28.7° ♋ Cancro
+   Luna: 18.7° ♎ Bilancia
+   Mercurio: 27.6° ♋ Cancro
+   Venere: 16.0° ♊ Gemelli
+   Marte: 2.9° ♐ Sagittario
+   Giove: 0.9° ♎ Bilancia
+   Saturno: 8.1° ♉ Toro
+   Urano: 0.7° ♎ Bilancia
+   Nettuno: 26.0° ♏ Scorpione
+   Plutone: 23.0° ♍ Vergine
+
+🏠 PIANETI NELLE CASE:
+   Sole: Casa 7 - Relazioni, matrimonio, soci, partner
+   Luna: Casa 9 - Filosofia, viaggi lunghi, studi superiori, spiritualità
+   Mercurio: Casa 7 - Relazioni, matrimonio, soci, partner
+   Venere: Casa 6 - Lavoro, salute, routine, servizio
+   Marte: Casa 11 - Amicizie, progetti, speranze, gruppi
+   Giove: Casa 9 - Filosofia, viaggi lunghi, studi superiori, spiritualità
+   Saturno: Casa 4 - Famiglia, origini, casa, genitori
+   Urano: Casa 9 - Filosofia, viaggi lunghi, studi superiori, spiritualità
+   Nettuno: Casa 11 - Amicizie, progetti, speranze, gruppi
+   Plutone: Casa 9 - Filosofia, viaggi lunghi, studi superiori, spiritualità
+
+📐 CUSPIDI DELLE CASE (Placido):
+   Casa 1 (Ascendente): 27.8° ♐ Sagittario
+   Casa 2 (II): 6.9° ♒ Acquario
+   Casa 3 (III): 19.1° ♓ Pesci
+   Casa 4 (FC): 23.1° ♈ Ariete
+   Casa 5 (V): 18.2° ♉ Toro
+   Casa 6 (VI): 8.6° ♊ Gemelli
+   Casa 7 (Discendente): 27.8° ♊ Gemelli
+   Casa 8 (VIII): 6.9° ♌ Leone
+   Casa 9 (IX): 19.1° ♍ Vergine
+   Casa 10 (MC): 23.1° ♎ Bilancia
+   Casa 11 (XI): 18.2° ♏ Scorpione
+   Casa 12 (XII): 8.6° ♐ Sagittario
+
+⚡ POTENZE ASTROLOGICHE:
+   🔴 Armonici: +345.5
+   🔵 Disarmonici: -250.3
+   ⚪ Neutri: +173.1
+   🟣 TOTALE: 268.3
+
+⚡ ASPETTI TRA PIANETI:
+   • Sole CONGIUNZIONE Mercurio (orbita: 1.1°)
+   • Sole SEMIQUADRATO Venere (orbita: 42.7°)
+   • Sole TRIGONO Marte (orbita: 124.2°)
+   • Sole SESTILE Giove (orbita: 62.2°)
+   • Sole SESTILE Urano (orbita: 62.0°)
+   • Sole TRIGONO Nettuno (orbita: 117.3°)
+   • Sole SESTILE Plutone (orbita: 54.3°)
+   • Luna TRIGONO Venere (orbita: 122.8°)
+   • Luna SEMIQUADRATO Marte (orbita: 44.2°)
+   • Mercurio TRIGONO Marte (orbita: 125.3°)
+   • Mercurio SESTILE Giove (orbita: 63.2°)
+   • Mercurio SESTILE Urano (orbita: 63.1°)
+   • Mercurio TRIGONO Nettuno (orbita: 118.4°)
+   • Mercurio SESTILE Plutone (orbita: 55.4°)
+   • Venere QUADRATURA Plutone (orbita: 97.1°)
+   • Marte SESTILE Giove (orbita: 62.0°)
+   • Marte SESTILE Urano (orbita: 62.2°)
+   • Marte CONGIUNZIONE Nettuno (orbita: 6.9°)
+   • Giove CONGIUNZIONE Urano (orbita: 0.1°)
+   • Giove SESTILE Nettuno (orbita: 55.1°)
+   • Giove CONGIUNZIONE Plutone (orbita: 7.8°)
+   • Saturno SESQUIQUADRATO Plutone (orbita: 134.9°)
+   • Urano SESTILE Nettuno (orbita: 55.3°)
+   • Urano CONGIUNZIONE Plutone (orbita: 7.7°)
+   • Nettuno SESTILE Plutone (orbita: 63.0°)
+
+📏 ASPETTI PIANETI CON CUSPIDI:
+   • Sole QUINCONCE Ascendente (orbita: 149.1°)
+   • Sole QUADRATURA FC (orbita: 95.6°)
+   • Sole SEMISESTILE Discendente (orbita: 30.9°)
+   • Sole QUADRATURA MC (orbita: 84.4°)
+   • Luna OPPOSIZIONE FC (orbita: 175.7°)
+   • Luna CONGIUNZIONE MC (orbita: 4.3°)
+   • Mercurio QUINCONCE Ascendente (orbita: 150.2°)
+   • Mercurio QUADRATURA FC (orbita: 94.6°)
+   • Mercurio SEMISESTILE Discendente (orbita: 29.8°)
+   • Mercurio QUADRATURA MC (orbita: 85.4°)
+   • Venere SESTILE FC (orbita: 52.9°)
+   • Venere TRIGONO MC (orbita: 127.1°)
+   • Giove QUADRATURA Ascendente (orbita: 87.0°)
+   • Giove QUADRATURA Discendente (orbita: 93.0°)
+   • Urano QUADRATURA Ascendente (orbita: 87.1°)
+   • Urano QUADRATURA Discendente (orbita: 92.9°)
+   • Nettuno SEMISESTILE Ascendente (orbita: 31.8°)
+   • Nettuno QUINCONCE FC (orbita: 147.1°)
+   • Nettuno QUINCONCE Discendente (orbita: 148.2°)
+   • Nettuno SEMISESTILE MC (orbita: 32.9°)
+   • Plutone QUADRATURA Ascendente (orbita: 94.8°)
+   • Plutone QUINCONCE FC (orbita: 149.9°)
+   • Plutone QUADRATURA Discendente (orbita: 85.2°)
+   • Plutone SEMISESTILE MC (orbita: 30.1°)
+   • Ascendente CONGIUNZIONE Ascendente (orbita: 0.0°)
+   • Ascendente TRIGONO FC (orbita: 115.2°)
+   • Ascendente OPPOSIZIONE Discendente (orbita: 180.0°)
+   • Ascendente SESTILE MC (orbita: 64.8°)
+   • Medio Cielo SESTILE Ascendente (orbita: 64.8°)
+   • Medio Cielo OPPOSIZIONE FC (orbita: 180.0°)
+   • Medio Cielo TRIGONO Discendente (orbita: 115.2°)
+   • Medio Cielo CONGIUNZIONE MC (orbita: 0.0°)
+   ... altri aspetti con le case ...
+   • Luna QUINCONCE III (orbita: 150.4°)
+   • Luna QUINCONCE V (orbita: 150.5°)
+   • Luna SEMISESTILE IX (orbita: 29.6°)
+   • Luna SEMISESTILE XI (orbita: 29.5°)
+   • Venere QUADRATURA III (orbita: 86.8°)
+
+========================================
+👩 SEZIONE DONNA
+========================================
+
+🌙 ANALISI DELLA LUNA
+----------------------------------------
+📌 La Luna è nel segno: 18.7° ♎ Bilancia
+🏠 La Luna è in Casa 9 - Filosofia, viaggi lunghi, studi superiori, spiritualità
+
+⚡ ASPETTI DELLA LUNA CON PIANETI:
+   • Luna TRIGONO Venere (orbita: 122.8°)
+   • Luna SEMIQUADRATO Marte (orbita: 44.2°)
+
+📏 ASPETTI DELLA LUNA CON CUSPIDI:
+   • Luna OPPOSIZIONE FC (orbita: 175.7°)
+   • Luna CONGIUNZIONE MC (orbita: 4.3°)
+   ... altri aspetti con le case ...
+   • Luna QUINCONCE III (orbita: 150.4°)
+   • Luna QUINCONCE V (orbita: 150.5°)
+   • Luna SEMISESTILE IX (orbita: 29.6°)
+----------------------------------------
+
+💖 VENERE - Amore e relazioni:
+   Venere è in 16.0° ♊ Gemelli, Casa 6
+
+💑 CASA 7 (Relazioni):
+   Cuspide Casa 7: 27.8° ♊ Gemelli
+========================================
+
+🔥 DISTRIBUZIONE ELEMENTI:
+   Fuoco: ■ (1)
+   Terra: ■■ (2)
+   Aria: ■■■■ (4)
+   Acqua: ■■■ (3)
+============================================================
