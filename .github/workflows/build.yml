@@ -1,4 +1,4 @@
-name: Build Signed APK
+name: Build APK
 
 on:
   push:
@@ -19,13 +19,11 @@ jobs:
           pip install buildozer cython
 
       - name: Build with Buildozer
-        uses: digreatbrian/buildozer-action@v2
-        with:
-          python-version: 3.11
-          buildozer-cmd: buildozer -v android debug
+        run: |
+          buildozer android debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: femme-apk
-          path: ./bin/*.apk
+          path: bin/*.apk
