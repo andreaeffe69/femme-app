@@ -32,17 +32,17 @@ jobs:
           cd ~/.buildozer/android/platform
           wget -q https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
           unzip -q commandlinetools-linux-11076708_latest.zip
-          # Crea la struttura ESATTA che buildozer vuole
+          # Struttura per buildozer
           mkdir -p android-sdk/tools/bin
           cp -r cmdline-tools/* android-sdk/tools/
-          cp -r cmdline-tools/* android-sdk/tools/bin/
           mkdir -p android-sdk/cmdline-tools/latest
           cp -r cmdline-tools/* android-sdk/cmdline-tools/latest/
           export ANDROID_SDK_ROOT=$HOME/.buildozer/android/platform/android-sdk
           export PATH=$ANDROID_SDK_ROOT/tools/bin:$PATH
-          yes | sdkmanager --licenses
-          yes | sdkmanager "build-tools;37.0.0"
-          sdkmanager "platform-tools" "platforms;android-31"
+          SDK_MANAGER="$ANDROID_SDK_ROOT/tools/bin/sdkmanager"
+          yes | $SDK_MANAGER --sdk_root=$ANDROID_SDK_ROOT --licenses
+          $SDK_MANAGER --sdk_root=$ANDROID_SDK_ROOT "build-tools;37.0.0"
+          $SDK_MANAGER --sdk_root=$ANDROID_SDK_ROOT "platform-tools" "platforms;android-31"
 
       - name: Configure buildozer.spec
         run: |
