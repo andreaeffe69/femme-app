@@ -37,7 +37,10 @@ jobs:
           export ANDROID_SDK_ROOT=$HOME/.buildozer/android/platform/android-sdk
           export PATH=$ANDROID_SDK_ROOT/tools/bin:$PATH
           yes | sdkmanager --licenses || true
-          sdkmanager "platform-tools" "platforms;android-31" "build-tools;30.0.3" || true
+          # Installa build-tools specifici
+          sdkmanager "platform-tools" "platforms;android-31" "build-tools;30.0.3" "build-tools;33.0.0" || true
+          # Crea la cartella build-tools
+          mkdir -p android-sdk/build-tools/30.0.3
 
       - name: Configure buildozer.spec
         run: |
