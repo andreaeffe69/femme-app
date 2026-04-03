@@ -35,6 +35,8 @@ jobs:
 
       - name: Configure buildozer.spec
         run: |
+          # Rimuovi eventuali duplicati di log_level
+          sed -i '/^log_level =/d' buildozer.spec
           echo "log_level = 2" >> buildozer.spec
           echo "android.sdk_path = $HOME/.buildozer/android/platform/android-sdk" >> buildozer.spec
 
