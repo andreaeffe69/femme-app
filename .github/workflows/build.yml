@@ -15,8 +15,14 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt update
-          sudo apt install -y git zip unzip openjdk-17-jdk autoconf libtool
+          sudo apt install -y git zip unzip autoconf libtool wget
           pip install buildozer cython
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
 
       - name: Setup Android SDK
         run: |
@@ -35,7 +41,6 @@ jobs:
 
       - name: Configure buildozer.spec
         run: |
-          # Rimuovi eventuali duplicati di log_level
           sed -i '/^log_level =/d' buildozer.spec
           echo "log_level = 2" >> buildozer.spec
           echo "android.sdk_path = $HOME/.buildozer/android/platform/android-sdk" >> buildozer.spec
@@ -43,6 +48,7 @@ jobs:
       - name: Build with Buildozer
         run: |
           export ANDROID_SDK_ROOT=$HOME/.buildozer/android/platform/android-sdk
+          export JAVA_HOME=$JAVA_HOME_17_X64
           buildozer android debug
 
       - name: Upload APK
