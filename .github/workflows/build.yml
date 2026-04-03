@@ -14,8 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Build with Buildozer
+      - name: Disable root warning and build
         run: |
+          echo "warn_on_root = 0" >> buildozer.spec
           buildozer android debug
 
       - name: Upload APK
