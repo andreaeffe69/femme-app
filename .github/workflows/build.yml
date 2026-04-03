@@ -30,21 +30,18 @@ jobs:
           cd ~/.buildozer/android/platform
           wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
           unzip -o commandlinetools-linux-11076708_latest.zip
-          # Crea la struttura che buildozer si aspetta
-          mkdir -p android-sdk/tools/bin
-          cp -r cmdline-tools/* android-sdk/tools/
-          cp -r cmdline-tools/* android-sdk/cmdline-tools/latest/ 2>/dev/null || true
+          mkdir -p android-sdk/cmdline-tools
+          mv cmdline-tools android-sdk/cmdline-tools/latest
           export ANDROID_SDK_ROOT=$HOME/.buildozer/android/platform/android-sdk
-          export PATH=$ANDROID_SDK_ROOT/tools/bin:$PATH
+          export PATH=$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH
           yes | sdkmanager --licenses || true
-          # Installa build-tools specifici
-          sdkmanager "platform-tools" "platforms;android-31" "build-tools;30.0.3" "build-tools;33.0.0" || true
-          # Crea la cartella build-tools
-          mkdir -p android-sdk/build-tools/30.0.3
+          # Installa build-tools che contengono aidl
+          sdkmanager "build-tools;30.0.3" "platform-tools" "platforms;android-31" || true
 
       - name: Configure buildozer.spec
         run: |
           echo "android.sdk_path = $HOME/.buildozer/android/platform/android-sdk" >> buildozer.spec
+          echo "android.ndk_path = $HOME/.buildozer/android/platform/android-ndk-r25b" >> buildozer.spec
 
       - name: Build with Buildozer
         run: |
