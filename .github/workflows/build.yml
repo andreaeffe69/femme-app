@@ -20,18 +20,21 @@ jobs:
 
       - name: Setup Android SDK
         run: |
-          mkdir -p ~/.buildozer/android/platform
+          mkdir -p ~/.buildozer/android/platform/android-sdk
           cd ~/.buildozer/android/platform
           wget https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
           unzip -o commandlinetools-linux-11076708_latest.zip
-          mkdir -p cmdline-tools/latest
-          cp -r cmdline-tools/* cmdline-tools/latest/
-          export PATH=$PATH:$PWD/cmdline-tools/latest/bin
+          # Sposta tutto nella struttura corretta
+          mkdir -p android-sdk/cmdline-tools
+          cp -r cmdline-tools android-sdk/cmdline-tools/latest
+          export ANDROID_SDK_ROOT=$HOME/.buildozer/android/platform/android-sdk
+          export PATH=$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH
           yes | sdkmanager --licenses || true
           yes | sdkmanager "build-tools;37.0.0" "platform-tools" "platforms;android-31" || true
 
       - name: Build with Buildozer
         run: |
+          export ANDROID_SDK_ROOT=$HOME/.buildozer/android/platform/android-sdk
           buildozer android debug
 
       - name: Upload APK
