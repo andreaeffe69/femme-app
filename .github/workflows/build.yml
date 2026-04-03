@@ -32,13 +32,14 @@ jobs:
           unzip -o commandlinetools-linux-11076708_latest.zip
           mkdir -p android-sdk/cmdline-tools
           mv cmdline-tools android-sdk/cmdline-tools/latest
-          # Crea il link che buildozer si aspetta
-          mkdir -p android-sdk/tools/bin
-          ln -s ../cmdline-tools/latest/bin/* android-sdk/tools/bin/ 2>/dev/null || true
           export ANDROID_SDK_ROOT=$HOME/.buildozer/android/platform/android-sdk
-          export PATH=$ANDROID_SDK_ROOT/tools/bin:$PATH
+          export PATH=$ANDROID_SDK_ROOT/cmdline-tools/latest/bin:$PATH
           yes | sdkmanager --licenses || true
           sdkmanager "platform-tools" "platforms;android-31" "build-tools;30.0.3" || true
+
+      - name: Configure buildozer.spec
+        run: |
+          echo "android.sdk_path = $HOME/.buildozer/android/platform/android-sdk" >> buildozer.spec
 
       - name: Build with Buildozer
         run: |
