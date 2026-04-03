@@ -12,36 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Install dependencies
-        run: |
-          sudo apt update
-          sudo apt install -y git zip unzip openjdk-17-jdk autoconf libtool
-          pip install buildozer cython
-
-      - name: Setup Android SDK
-        run: |
-          mkdir -p ~/.buildozer/android/platform
-          cd ~/.buildozer/android/platform
-          wget -q https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
-          unzip -q commandlinetools-linux-11076708_latest.zip
-          mkdir -p cmdline-tools
-          mv cmdline-tools cmdline-tools/latest
-          mkdir -p android-sdk
-          mv cmdline-tools android-sdk/
-          mkdir -p android-sdk/tools/bin
-          ln -s ../cmdline-tools/latest/bin/* android-sdk/tools/bin/ 2>/dev/null || true
-          export ANDROID_SDK_ROOT=$HOME/.buildozer/android/platform/android-sdk
-          export PATH=$ANDROID_SDK_ROOT/tools/bin:$PATH
-          yes | sdkmanager --licenses || true
-          yes | sdkmanager "platform-tools" "platforms;android-31" "build-tools;30.0.3" || true
-
-      - name: Build with Buildozer
-        run: |
-          export ANDROID_SDK_ROOT=$HOME/.buildozer/android/platform/android-sdk
-          buildozer android debug
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
+      - name: Build APK with Docker
+        uses: kivy/buildozer-action@v1
         with:
-          name: femme-apk
-          path: bin/*.apk
+          command: buildozer android debug
+          workdir: .
